@@ -1,5 +1,5 @@
 
-const socket = new WebSocket('ws://educaguardia-chat.up.railway.app/conect');
+const socket = new WebSocket('wss://educaguardia-chat.up.railway.app/conect');
 const Client = Stomp.over(socket);
 
 
