@@ -1,5 +1,5 @@
-
-const socket = new WebSocket('wss://educaguardia-chat.up.railway.app/conect');
+const jwt = "jwt" // TODO recuperar jwt de cookie ou algum estado automático
+const socket = new WebSocket('ws://127.0.0.1:8081/conect?jwt=' + jwt); // TODO Colocar link correto do servidor de chat
 const Client = Stomp.over(socket);
 
 
